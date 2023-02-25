@@ -5,4 +5,5 @@ export interface Rent {
   condominiumFee: string;
   iptu: string;
   neighborhood: string;
+  link?: string;
 }

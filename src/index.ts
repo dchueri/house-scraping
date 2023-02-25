@@ -8,6 +8,5 @@ console.log("Starting Bot...");
   links.map(async (link) => {
     const rent = await ScrapingServices.getInfo(link);
     const result = await RentRepository.addRent(rent);
-    console.log(result);
   });
 })();
