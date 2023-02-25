@@ -1,19 +1,12 @@
 import puppeteer from "puppeteer";
-
-interface ScrapingResult {
-  rentValue: string;
-  propertyCategory: string;
-  propertyType: string;
-  condominiumFee: string;
-  iptu: string;
-}
+import { Rent } from "../interfaces";
 
 export class ScrapingServices {
-  static async getInfo(link: string) {
+  static async getInfo(link: string): Promise<Rent> {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(link, { waitUntil: "domcontentloaded" });
-    const result = await page.evaluate((): ScrapingResult => {
+    const result = await page.evaluate((): Rent => {
       return {
         rentValue:
           document.querySelector(
@@ -35,9 +28,13 @@ export class ScrapingServices {
           document.querySelector(
             "#content > div.ad__sc-18p038x-2.djeeke > div > div.sc-bwzfXH.ad__h3us20-0.ikHgMx > div.ad__duvuxf-0.ad__h3us20-0.eCUDNu > div.ad__h3us20-6.glaKaZ > div > div > div > div.sc-bwzfXH.ad__h3us20-0.ikHgMx > div:nth-child(4) > div > dd"
           )?.textContent || "empty",
+        neighborhood:
+          document.querySelector(
+            "#content > div.ad__sc-18p038x-2.djeeke > div > div.sc-bwzfXH.ad__h3us20-0.ikHgMx > div.ad__duvuxf-0.ad__h3us20-0.eCUDNu > div.ad__h3us20-6.fSFeFx > div > div > div > div.sc-hmzhuo.gqoVfS.sc-jTzLTM.iwtnNi > div.sc-bwzfXH.ad__h3us20-0.ikHgMx > div:nth-child(3) > div > dd"
+          )?.textContent || "empty",
       };
     });
-    console.log(result);
     await browser.close();
+    return result;
   }
 }

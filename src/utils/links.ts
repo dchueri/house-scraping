@@ -1,0 +1,18 @@
+export const links = [
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/sobrado-para-aluguel-anual-tem-80-metros-quadrados-com-2-quartos-1150309470",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apto-de-dpois-dormitorios-com-sacada-no-campeche-1149767253",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/casa-duplex-alto-padrao-anual-500-metros-d-a-praia-dos-ingleses-e-proximo-ao-centrinho-1138486229",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-de-2-dormitorios-no-campeche-56-m-r-2-400-00-mes-1147479132",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apto-aluguel-anual-2-quartos-semi-mobiliado-vaga-de-garagem-1142946287",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/alugo-casa-no-canto-da-lagoa-1150299446",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-aluguel-ingleses-2-quartos-58-m2-1149963480",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/aluguel-anual-casa-sobrado--incluso-energia-no-campeche-sul-da-ilha-florianopolis-1137766425",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/lindo-apartamento-mobiliado-e-decorado-para-locacao-anual-localizado-a-100-metros-do-mar-1148803602",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/florianopolis-apartamento-padrao-ingleses-do-rio-vermelho-1148609530",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/casa-residencial-em-florianopolis-sc-vargem-grande-1142572804",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/casa-com-2-dormitorios-para-alugar-67-m-por-r-3-944-16-mes-ribeirao-da-ilha-florian-1141105384",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/casa-com-2-dormitorios-para-alugar-95-m-por-r-3-240-00-mes-campeche-florianopolis-s-1111956836",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/casa-apto-duplex-campeche-prox-a-praia-maximo-2-pessoas-1149025611",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/otima-casa-2-dormitorios-no-rio-tavares-1134351056",
+  "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/casa-nova-para-alugar-anual-1150074874",
+];
