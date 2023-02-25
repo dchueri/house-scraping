@@ -34,6 +34,8 @@ export class ScrapingServices {
           )?.textContent || "empty",
       };
     });
+    result.link = link;
+    console.log(result);
     await browser.close();
     return result;
   }

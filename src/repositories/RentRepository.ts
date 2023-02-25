@@ -16,6 +16,7 @@ export class RentRepository {
         Condomínio: { rich_text: [{ text: { content: rent.condominiumFee } }] },
         IPTU: { rich_text: [{ text: { content: rent.iptu } }] },
         Bairro: { rich_text: [{ text: { content: rent.neighborhood } }] },
+        Link: { url: rent.link! },
       },
     });
     return result;
